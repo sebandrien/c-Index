@@ -11,5 +11,6 @@ int main(void) {
   b = temp;
 
   printf("\nAfter Swapping, a is %d and b is %d\n", a, b);
+  
   return 0;
 }
