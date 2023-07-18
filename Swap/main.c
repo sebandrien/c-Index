@@ -1,9 +1,16 @@
 #include <stdio.h>
 
 int main(void) {
-  int a, b, temp;
-
-  scanf("%d%d", &a, &b);
+    
+  int a, b, temp, ret;
+  
+  printf("Enter two integers:\n");
+  
+  while ((ret = scanf("%d %d", &a, &b)) != 2) {
+      printf("Invalid input. Please enter two integers.\n");
+      while(getchar() != '\n');  // discard the rest of the line
+  }
+  
   printf("Before swapping, a is %d and b is %d", a, b);
 
   temp = a;
