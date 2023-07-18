@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 int main ()
-
 {
    float score_1, score_2, score_3, score_4, score_5;
    float sum, average;
