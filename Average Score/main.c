@@ -11,7 +11,6 @@ int main ()
    sum = score_1 + score_2 + score_3 + score_4 + score_5;
    average = sum / 5;
    
-    
    printf ("Total score: %f\n", sum);
    printf ("Percentage: %.6f %%", average);
 
