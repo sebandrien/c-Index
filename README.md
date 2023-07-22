@@ -1,1 +1,1 @@
-# p3-mysql-javaui
+# Academic Programs
