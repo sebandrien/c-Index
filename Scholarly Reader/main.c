@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 void merge(int pages[], int l, int m, int r);
 void mergeSort(int pages[], int l, int r);
@@ -12,15 +12,16 @@ int main()
   scanf("%d", &n); //Take n cases
   int *pages = (int*) malloc(n* sizeof(int)); // Allocate memory after n is known
   
-  for (int i = 0; i < n; i++) {  //Loop for every given test case
-
+  for (int i = 0; i < n; i++) 
+  { 
     int n;
     int l;
 
     scanf("%d", &n); 
     scanf("%d", &l); 
   
-    for (int j = 0; j < n; j++) {
+    for (int j = 0; j < n; j++) 
+    {
       scanf("%d", & pages[j]);
     }
 
@@ -31,8 +32,9 @@ int main()
     printf("%d\n\n", res);
   }
   
-  free(pages); // Free the allocated memory
-  return 0;
+  free(pages); 
+  
+ return 0;
 }
 
 void merge(int pages[], int l, int m, int r) {
@@ -83,7 +85,8 @@ void merge(int pages[], int l, int m, int r) {
   }
 }
 
-void mergeSort(int pages[], int l, int r) {
+void mergeSort(int pages[], int l, int r) 
+{
   if (l < r) {
 
     int m = l + (r - l) / 2;
@@ -94,12 +97,14 @@ void mergeSort(int pages[], int l, int r) {
   }
 }
 
-int max(int pages[], int n, int L) { 
+int max(int pages[], int n, int L) 
+{ 
 
   long long  temp = 0;
   long long sum = 0;
 
-  while (sum < n) {
+  while (sum < n) 
+  {
 
     temp += pages[sum];
 
@@ -110,5 +115,5 @@ int max(int pages[], int n, int L) {
       sum++;
   }
 
-  return sum;
+ return sum;
 }
