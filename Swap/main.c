@@ -6,9 +6,10 @@ int main(void) {
   
   printf("Enter two integers:\n");
   
-  while ((ret = scanf("%d %d", &a, &b)) != 2) {
+  while ((ret = scanf("%d %d", &a, &b)) != 2) 
+  {
       printf("Invalid input. Please enter two integers.\n");
-      while(getchar() != '\n');  // discard the rest of the line
+      while(getchar() != '\n'); 
   }
   
   printf("Before swapping, a is %d and b is %d", a, b);
@@ -19,5 +20,5 @@ int main(void) {
 
   printf("\nAfter Swapping, a is %d and b is %d\n", a, b);
   
-  return 0;
+ return 0;
 }
