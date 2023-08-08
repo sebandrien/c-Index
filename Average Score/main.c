@@ -14,7 +14,7 @@ int main ()
    average = sum / 5;
    
    printf ("Total score: %f\n", sum);
-   printf ("Percentage: %.2f %%", average);
-
-   return 0;
+   printf ("Average Percentage: %.2f%%", average);
+   
+ return 0;
 }
