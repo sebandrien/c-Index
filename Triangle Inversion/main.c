@@ -5,12 +5,13 @@ int x = 0;
 int updown_trianglePrinter(int n)
 {
     
-    int i;
-    int j;
+  int i;
+  int j;
  
-    printf("Number of lines: %d\n", n);
+  printf("Number of lines: %d\n", n);
      
-    if (n >0) {
+  if (n >0) 
+  {
     for(i = 0; i < n; i++) {
 
         for(j = 0; j < n - i; j++) {
@@ -34,22 +35,22 @@ int updown_trianglePrinter(int n)
 
     }
     
-   return 0;
+ return 0;
 }
     
 int main()
 {
-    int n;
+  int n;
 
-    while (1)
-    {   
-         scanf ("%d", &n);
-         if (n < 0)
+  while (1)
+  {   
+   scanf ("%d", &n);
+   if (n < 0)
          {
              break;
          }
          updown_trianglePrinter(n);
         
     }
-    printf("Total triangles printed : %d", x);
+  printf("Total triangles printed : %d", x);
 }
