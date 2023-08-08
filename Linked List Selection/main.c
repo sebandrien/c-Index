@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 typedef struct node_s{
-	int data;
-	struct node_s * nextptr;
+  int data;
+  struct node_s * nextptr;
 }node_t;
 
 node_t * push(node_t * top, int val); //function prototypes
@@ -25,13 +25,13 @@ int main()
   while(choice != 6) 	//menu driven component
   {
     printf("Selection Table: \n");
-	printf("1: Push onto stack\n");
-	printf("2: Pop from stack\n");
-	printf("3: Retreive the top from stack\n");
-	printf("4: Check to see if stack is empty\n");
-	printf("5: Display stack visual\n");
-	printf("6: Terminate program\n");
-	printf("\n");
+    printf("1: Push onto stack\n");
+    printf("2: Pop from stack\n");
+    printf("3: Retreive the top from stack\n");
+    printf("4: Check to see if stack is empty\n");
+    printf("5: Display stack visual\n");
+    printf("6: Terminate program\n");
+    printf("\n");
 		
 	printf("Please enter what you would like to do: ");
 	scanf("%d", &choice);
@@ -84,8 +84,7 @@ int main()
 }
 
 node_t * push(node_t * top, int val)
-{
-    
+{  
   if(isEmpty(top))
   {
      printf("Creating a new top of stack...\n");
@@ -96,7 +95,6 @@ node_t * push(node_t * top, int val)
    }
   
   node_t * temp = createNode(val);
-
   temp->nextptr = top; 	//put new node on top
 	
  return temp; //temp is new top
@@ -124,9 +122,10 @@ int getTop(node_t *top)
 {
     if (top == NULL)
     {
-        printf("Stack is empty.\n");
-        return -1; // Returns -1 or any sentinel value indicating that the stack is empty
+      printf("Stack is empty.\n");
+      return -1; // Returns -1 or any sentinel value indicating that the stack is empty
     }
+	
  return top->data;
 }
 
@@ -159,12 +158,12 @@ node_t * createNode(int data)
 	
   if(node == NULL)
   {
-	printf("malloc wasn't successful");
-	
+     printf("malloc wasn't successful");
+	  
    return NULL;
   }
 
-	node->data = data; 	 //populate
+node->data = data; 	 //populate
 	node->nextptr = NULL;
 	
  return node;
@@ -179,8 +178,9 @@ void deleteAllNodes(node_t * top)
 {
   while(!isEmpty(top))
   {
-	node_t * temp = top;
-	top = top->nextptr;
-	removeNode(temp);
+    node_t * temp = top;
+    top = top->nextptr;
+	  
+    removeNode(temp);
   }
 }
