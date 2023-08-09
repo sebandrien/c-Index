@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 typedef struct node_s{ 
-	int data;
-	struct node_s * nextptr;
+  int data;
+  struct node_s * nextptr;
 }node_t;
 
 node_t * createNode();
