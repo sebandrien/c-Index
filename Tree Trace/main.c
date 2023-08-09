@@ -3,8 +3,8 @@
 #define resdistance 0
 #define treemax 500
 
-void distance() {
-
+void distance() 
+{
   int n;
   int tree[0][0];
   int tree2[0][0];
@@ -16,44 +16,46 @@ void distance() {
     int distance = tree[i][0] - tree2[i][0] + tree[i][0] - tree2[i][0];
   }
 
-  result = sqrt(distance);
+ result = sqrt(distance);
 }
 
-int calculate() {
-    
+int calculate() 
+{ 
   int n = 0;
   int tree[13][2];
 
-  for (int i = 1; i <= 2 * n; i++) {
+  for (int i = 1; i <= 2 * n; i++) 
+  {
     if (tree[i][0])
       break;
   }
 
-  for (int i = 1; i <= 2 * n; i++) {
-    if (tree[i][0]) {
+  for (int i = 1; i <= 2 * n; i++) 
+  {
+    if (tree[i][0]) 
+    {
       calculate();
-
     }
   }
 }
 
-int main() {
-
+int main() 
+{
   int n;
   int t;
-  float minimumDistance = 0;
-
   int point[0][0];
-
+  float minimumDistance = 0;
+  
   scanf("%d", & n);
 
-  while (n--) {
-
+  while (n--) 
+  {
     scanf("%d", & t);
 
     int trees = n * 2;
 
-    for (int i = 1; i <= trees; i++) {
+    for (int i = 1; i <= trees; i++) 
+    {
       scanf("%d %d", & point[i][0], & point[i][0]);
     }
 
