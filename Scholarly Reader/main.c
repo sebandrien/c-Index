@@ -37,7 +37,8 @@ int main()
  return 0;
 }
 
-void merge(int pages[], int l, int m, int r) {
+void merge(int pages[], int l, int m, int r) 
+{
 
   int k;
   int n1 = m - l + 1;
