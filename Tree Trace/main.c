@@ -1,69 +1,52 @@
 #include <stdio.h>
 #include <math.h>
-#define resdistance 0
-#define treemax 500
 
-void distance() 
+#define TREEMAX 500
+
+void calculateDistance(int tree[][2], int tree2[][2], int n, float *result) 
 {
-  int n;
-  int tree[0][0];
-  int tree2[0][0];
-  float distance;
-  float result = 0;
-
-  for (int i = 1; i <= 2 * n; i++) 
-  {
-    int distance = tree[i][0] - tree2[i][0] + tree[i][0] - tree2[i][0];
-  }
-
- result = sqrt(distance);
+    for (int i = 0; i < n; i++) 
+    {
+        float distance = sqrt(pow((tree[i][0] - tree2[i][0]), 2) + pow((tree[i][1] - tree2[i][1]), 2));
+        if(distance > *result)
+            *result = distance;
+    }
 }
 
-int calculate() 
-{ 
-  int n = 0;
-  int tree[13][2];
-
-  for (int i = 1; i <= 2 * n; i++) 
-  {
-    if (tree[i][0])
-      break;
-  }
-
-  for (int i = 1; i <= 2 * n; i++) 
-  {
-    if (tree[i][0]) 
+void calculate(int tree[][2], int n) 
+{
+    for (int i = 0; i < n; i++) 
     {
-      calculate();
+        if (tree[i][0] == 0)
+            break;
     }
-  }
 }
 
 int main() 
 {
-  int n;
-  int t;
-  int point[0][0];
-  float minimumDistance = 0;
-  
-  scanf("%d", & n);
-
-  while (n--) 
-  {
-    scanf("%d", & t);
-
-    int trees = n * 2;
-
-    for (int i = 1; i <= trees; i++) 
+    int n, t;
+    int point[TREEMAX][2];
+    float minimumDistance = 0.0;
+    
+    scanf("%d", &n);
+    
+    while (n--) 
     {
-      scanf("%d %d", & point[i][0], & point[i][0]);
+        scanf("%d", &t);
+        
+        for (int i = 0; i < t; i++) 
+        {
+            scanf("%d %d", &point[i][0], &point[i][1]);
+        }
+        
+        calculate(point, t);
+
+        // Assuming you want to calculate distance between the two sets of points. 
+        // Since it's not clear from the initial code, the below line is just a placeholder.
+        calculateDistance(point, point, t, &minimumDistance);
+        
+        printf("%.3f\n", minimumDistance);
     }
-
-    if (point[0][0] == 0)
-      return 0;
-      
-    calculate();
-
-    printf("%0.3lf", minimumDistance);
-  }
+    
+    return 0;
 }
