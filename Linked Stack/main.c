@@ -1,31 +1,29 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct node_s{
-	
-	int data;
-	struct node_s * nextptr;
+  int data;
+  struct node_s * nextptr;
 	
 }node_t;
 
-//function prototypes
-node_t * push(node_t * top, int val);
-node_t * pop(node_t * top);
-int getTop(node_t * top);
-int isEmpty(node_t * top);
-void displayStack(node_t * top);
-node_t * createNode(int data);
-void removeNode(node_t * top);
-void deleteAllNodes(node_t * top);
+node_t* push(node_t* top, int val);
+node_t* pop(node_t* top);
+int getTop(node_t* top);
+int isEmpty(node_t* top);
+void displayStack(node_t* top);
+node_t* createNode(int data);
+void removeNode(node_t* top);
+void deleteAllNodes(node_t* top);
 
 int main()
 {
-	node_t * top = NULL; //get top pointer setup
+	node_t* top = NULL; 
 	
 	int choice = 0;
 	int val;
 	
-	//menu driven component
+	
 	while(choice != 6)
 	{
 		printf("****************************\n");
@@ -82,7 +80,7 @@ int main()
 	deleteAllNodes(top);
 }
 
-node_t * push(node_t * top, int val)
+node_t* push(node_t * top, int val)
 {
 	if(isEmpty(top))
 	{
@@ -99,7 +97,7 @@ node_t * push(node_t * top, int val)
 	return temp; //temp is new top
 }
 
-node_t * pop(node_t * top)
+node_t* pop(node_t * top)
 {
 	if(isEmpty(top)) //check if empty
 	{
@@ -118,12 +116,12 @@ node_t * pop(node_t * top)
 
 int getTop(node_t * top)
 {
-	return top->data;
+ return top->data;
 }
 
 int isEmpty(node_t * top)
 {
-	return (top == NULL);
+ return (top == NULL);
 }
 
 void displayStack(node_t * top)
@@ -143,33 +141,35 @@ void displayStack(node_t * top)
 		printf("Stack is Empty\n");
 }
 
-node_t * createNode(int data)
+node_t* createNode(int data)
 {
-	node_t * node = (node_t *) malloc(sizeof(node_t));
+  node_t * node = (node_t *) malloc(sizeof(node_t));
 	
-	if(node == NULL)
-	{
-		printf("malloc wasn't successful");
-		return NULL;
-	}
-	 //populate
-	node->data = data;
-	node->nextptr = NULL;
+  if(node == NULL)
+  {
+    printf("malloc wasn't successful");
+	  
+   return NULL;
+  }
 	
-	return node;
+  node->data = data;
+  node->nextptr = NULL;
+	
+ return node;
 }
 
-void removeNode(node_t * top)
+void removeNode(node_t* top)
 {
-	free(top);
+  free(top);
 }
 
-void deleteAllNodes(node_t * top)
+void deleteAllNodes(node_t* top)
 {
-	while(!isEmpty(top))
-	{
-		node_t * temp = top;
-		top = top->nextptr;
-		removeNode(temp);
-	}
+  while(!isEmpty(top))
+  {
+    node_t * temp = top;
+    top = top->nextptr;
+	  
+    removeNode(temp);
+  }
 }
