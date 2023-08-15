@@ -31,10 +31,9 @@ int main()
     printf("4: Check to see if stack is empty\n");
     printf("5: Display stack visual\n");
     printf("6: Terminate program\n");
-    printf("\n");
-		
-	printf("Please enter what you would like to do: ");
-	scanf("%d", &choice);
+    printf("\n");	
+    printf("Please enter what you would like to do: ");
+    scanf("%d", &choice);
 		
 	switch(choice)
 	{
@@ -88,7 +87,6 @@ node_t * push(node_t * top, int val)
   if(isEmpty(top))
   {
      printf("Creating a new top of stack...\n");
-   
      top = createNode(val);
    
     return top;
