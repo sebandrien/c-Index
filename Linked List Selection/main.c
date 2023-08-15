@@ -6,7 +6,6 @@ typedef struct node_s {
     struct node_s *nextptr;
 } node_t;
 
-// Function prototypes
 node_t * push(node_t * top, int val);
 node_t * pop(node_t * top);
 int getTop(node_t * top);
@@ -85,12 +84,14 @@ node_t * push(node_t * top, int val) {
   
     node_t * temp = createNode(val);
     temp->nextptr = top; // put new node on top
+    
     return temp;
 }
 
 node_t * pop(node_t * top) {
     if(isEmpty(top)) {
         printf("Nothing to pop from stack...\n");
+        
         return NULL;
     }
   
@@ -98,6 +99,7 @@ node_t * pop(node_t * top) {
     printf("Removing %d from stack.\n", temp->data);
     top = top->nextptr;
     removeNode(temp);
+    
     return top;
 }
 
@@ -106,6 +108,7 @@ int getTop(node_t *top) {
         printf("Stack is empty.\n");
         return -1;
     }
+    
     return top->data;
 }
 
