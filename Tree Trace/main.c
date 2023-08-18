@@ -41,8 +41,6 @@ int main()
         
         calculate(point, t);
 
-        // Assuming you want to calculate distance between the two sets of points. 
-        // Since it's not clear from the initial code, the below line is just a placeholder.
         calculateDistance(point, point, t, &minimumDistance);
         
         printf("%.3f\n", minimumDistance);
