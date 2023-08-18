@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-int x = 0;
-
-int updown_trianglePrinter(int n) {   
+int trianglePrinter(int n, int trianglesPrinted) {   
     int i, j;
  
     printf("Number of lines: %d\n", n);
@@ -22,13 +20,14 @@ int updown_trianglePrinter(int n) {
             printf("\n");      
         }   
         
-        ++x; 
-    }   
-    return 0;
+        trianglesPrinted++; // Increment the counter
+    }
+    return trianglesPrinted;
 }
     
 int main() {
     int n;
+    int totalTrianglesPrinted = 0;
 
     while (1) {   
         scanf("%d", &n);
@@ -37,8 +36,10 @@ int main() {
             break;
         }
         
-        updown_trianglePrinter(n);  
+        totalTrianglesPrinted = trianglePrinter(n, totalTrianglesPrinted);  
     }
     
-    printf("Total triangles printed: %d", x);
+    printf("Total triangles printed: %d", totalTrianglesPrinted);
+    
+    return 0;
 }
