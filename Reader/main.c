@@ -21,7 +21,7 @@ int main ()
         printf("%c is a small case letter. The letter number is %d in the alphabet.", n, counter);
      }
         
-     else if(n>= '0' && n <= '9')
+     else if(n >= '0' && n <= '9')
      {
         printf("%c is a digit.", n); 
         
