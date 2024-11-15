@@ -1,5 +1,5 @@
 # Index 
-An index of academic programs completed in C.
+An index of academic programs written in C.
 
 **Academic Record Serach**- Implements a system for managing student data, course enrollments, and grades by using data strucutes, file handling and command validation.
 
