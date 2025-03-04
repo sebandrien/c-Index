@@ -1,25 +1,25 @@
 # C Index 
 An index of academic programs written in C.
 
-**Academic Record Serach**- Implements a system for managing student data, course enrollments, and grades by using data strucutes, file handling and command validation.
+**Academic Record Serach** - Implements a system for managing student data, course enrollments, and grades by using data strucutes, file handling and command validation.
 
-**Armstrong Numbers**- Finds all armstrong  numbers to a given number n.
+**Armstrong Numbers** - Finds all armstrong  numbers to a given number n.
 
-**Average Score**- Calculates the average of 5 academic grades.
+**Average Score** - Calculates the average of 5 academic grades.
 
-**Intro**- Introduction print statement program for computer science course.
+**Intro** - Introduction print statement program for computer science course.
 
-**Letter Grade**- Reads data and calculates letter grade and has lookup functions.
+**Letter Grade** - Reads data and calculates letter grade and has lookup functions.
 
-**Linked List Selection**- Has a menu of options to modify a linked list.
+**Linked List Selection** - Has a menu of options to modify a linked list.
 
-**Linked Stack**- A simple implementation of a stack data structure in C using a linked list. It allows users to perform stack operations interactively, such as pushing values onto the stack, popping values off the stack, viewing the top value, checking if the stack is empty, and displaying the entire stack.
+**Linked Stack** - A simple implementation of a stack data structure in C using a linked list. It allows users to perform stack operations interactively, such as pushing values onto the stack, popping values off the stack, viewing the top value, checking if the stack is empty, and displaying the entire stack.
 
-**Merge Sort**- Demonstrates Merge Sort, a sorting algorithm that follows the divide-and-conquer approach.
+**Merge Sort** - Demonstrates Merge Sort, a sorting algorithm that follows the divide-and-conquer approach.
 
-**Odometer**- Simulates a driving experience, updating the odometer and fuel gauge based on the user's input for distance and fuel efficiency (miles per gallon).
+**Odometer** - Simulates a driving experience, updating the odometer and fuel gauge based on the user's input for distance and fuel efficiency (miles per gallon).
 
-**Queue Linked List**- Implements a circular queue using a linked list, where each node contains an integer (data) and a pointer to the next node. It provides functions to add elements to the queue (enqueue), remove elements from the queue (dequeue), check if the queue is empty (empty), display the elements in the queue (display), and show the front element (front).
+**Queue Linked List** - Implements a circular queue using a linked list, where each node contains an integer (data) and a pointer to the next node. It provides functions to add elements to the queue (enqueue), remove elements from the queue (dequeue), check if the queue is empty (empty), display the elements in the queue (display), and show the front element (front).
 
 **Reader**- Reads and interprets a given character inputed by a user.
 
