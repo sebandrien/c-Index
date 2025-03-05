@@ -31,8 +31,8 @@ An index of academic programs written in C.
 
 **Swap** - Prompts the user to enter two integers, checks for valid input, and then swaps the values of these integers.
 
-**Temperature Converter**- Converts a float input n, to celsius measurement.
+**Temperature Converter** - Converts a float input n, to celsius measurement.
 
-**Tree Trace**- This program calculates the maximum Euclidean distance between pairs of points stored in two-dimensional arrays, specifically designed for trees with up to TREEMAX nodes.
+**Tree Trace** - This program calculates the maximum Euclidean distance between pairs of points stored in two-dimensional arrays, specifically designed for trees with up to TREEMAX nodes.
 
-**Triangle Printer**- Prints two triangular patterns for each positive integer input n. Tracks how many triangles have been printed and outputs this count at the end. The loop terminates when the user inputs a negative number.
+**Triangle Printer** - Prints two triangular patterns for each positive integer input n. Tracks how many triangles have been printed and outputs this count at the end. The loop terminates when the user inputs a negative number.
