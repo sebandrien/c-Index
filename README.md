@@ -21,15 +21,15 @@ An index of academic programs written in C.
 
 **Queue Linked List** - Implements a circular queue using a linked list, where each node contains an integer (data) and a pointer to the next node. It provides functions to add elements to the queue (enqueue), remove elements from the queue (dequeue), check if the queue is empty (empty), display the elements in the queue (display), and show the front element (front).
 
-**Reader**- Reads and interprets a given character inputed by a user.
+**Reader** - Reads and interprets a given character inputed by a user.
 
-**Reverse Number**- Takes a five-digit integer as input, reverses the digits of that number, and calculates the sum of the digits. 
+**Reverse Number** - Takes a five-digit integer as input, reverses the digits of that number, and calculates the sum of the digits. 
 
-**Scholarly Reader**- Implementation of a merge sort algorithm combined with a custom logic to find the maximum sum of pages under certain constraints.
+**Scholarly Reader** - Implementation of a merge sort algorithm combined with a custom logic to find the maximum sum of pages under certain constraints.
 
-**String Processing**- Implements multiple functions for a given string such as str_copy(), isPlaindrome() and capitalize_word().
+**String Processing** - Implements multiple functions for a given string such as str_copy(), isPlaindrome() and capitalize_word().
 
-**Swap**- Prompts the user to enter two integers, checks for valid input, and then swaps the values of these integers.
+**Swap** - Prompts the user to enter two integers, checks for valid input, and then swaps the values of these integers.
 
 **Temperature Converter**- Converts a float input n, to celsius measurement.
 
