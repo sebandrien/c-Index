@@ -20,7 +20,7 @@ int trianglePrinter(int n, int trianglesPrinted) {
             printf("\n");      
         }   
         
-        trianglesPrinted++; // Increment the counter
+        trianglesPrinted++; 
     }
     return trianglesPrinted;
 }
